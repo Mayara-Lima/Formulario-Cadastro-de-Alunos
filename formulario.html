@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+        <title>Cadastro</title>
+    </head>
+
+    <body>  
+
+        <div>
+            <h1 id="titulo">Cadastro de Alunos</h1>
+            <p id="subtitulo">Preencha as suas informações</p>
+            <br>
+        </div>
+
+        <form>
+
+            <fieldset class="grupo">
+
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+
+            </fieldset> 
+
+            
+            <fieldset class="grupo">
+        
+            <div class="campo">
+                <label for="email"><strong>E-mail</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+             <div class="campo">
+                <label for="email"><strong>Telefone</strong></label>
+                <input type="tel" id="telefone" name="telefone" pattern="+1 (555) 555-5555" required>
+            </div>
+            
+            </fieldset> 
+
+            
+            <div class="campo">
+                <label><strong>Objetivo principal</strong></label>
+                <label>
+                    <input type="radio" name="frances" value="abordagem comunicativa" checked>Francês para abordagem comunicativa
+                </label>
+                <label>
+                    <input type="radio" name="frances" value="negocios">Francês para negócios
+                </label>
+                <label>
+                    <input type="radio" name="frances" value="viagem">Francês para viagem
+                </label>
+                <label>
+                    <input type="radio" name="frances" value="cultura e civilizacao">Francês para cultura e civilização
+                </label>
+                <label>
+                    <input type="radio" name="frances" value="testes e exames">Francês para preparação de testes e exames 
+                </label>
+            </div>
+
+           
+            <div class="campo">
+                <br>
+                <label for="objetivos"><strong>Habilidades a desenvolver, metas a atingir, etc</strong></label>
+                <textarea rows="3" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+            </div>
+
+            
+            <div class="campo">
+                <label for="nivel"><strong>Nível atual</strong></label>
+                <select id="nivel" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Iniciante</option>
+                  <option>Intermediário</option>
+                  <option>Avançado</option>
+                  <option>Meu nível precisa ser avaliado</option>
+                </select>
+            </div>
+
+            <fieldset class="grupo">
+                
+                <div id="check">
+                    <label><strong>Disponibilidade de dias</strong></label><br><br>
+                    <input type="checkbox" id="dia" name="segunda" value="segunda">
+                    <label for="segunda"> Segunda-feira</label>
+                    <input type="checkbox" id="dia" name="terça" value="terça">
+                    <label for="terca"> Terça-feira</label>
+                    <input type="checkbox" id="dia" name="quarta" value="quarta">
+                    <label for="quarta"> Quarta-feira</label>
+                    <br>
+                    <input type="checkbox" id="dia" name="quinta" value="quinta">
+                    <label for="quinta"> Quinta-feira</label>
+                    <input type="checkbox" id="dia" name="sexta" value="sexta">
+                    <label for="sexta"> Sexta-feira</label>
+                    <input type="checkbox" id="dia" name="sabado" value="sabado">
+                    <label for="sabado"> Sábado</label>
+                    </select>
+                </div>
+                
+            </fieldset>
+
+            <button class="botao" type="submit" onsubmit="">Concluído</button>            
+
+        </form>
+
+    </body>
+
+</html>
+
+
